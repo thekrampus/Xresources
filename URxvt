@@ -1,0 +1,33 @@
+! -*- mode: conf-xdefaults; -*-
+! URxvt configuration (called from .Xresources)
+! depends: aur/rxvt-unicode-patched | aur/urxvt-vtwheel | community/compton (for compositing) | 
+
+! URxvt extensions
+URxvt.perl-ext-common:  default,matcher,vtwheel
+
+! stop this nonsense
+URxvt.iso14755:         true
+URxvt.iso14755_52:      false
+
+! set urgent on terminal bell
+URxvt.urgentOnBell:     true
+
+! clickable urls should open automatically in chromium
+URxvt.url-launcher:     /usr/bin/chromium
+URxvt.matcher.button:   1
+URxvt.colorUL:          #a19b9b
+
+! scrollbar style - rxvt, plain, next, xterm
+URxvt.scrollstyle:      plain
+URxvt.thickness:        5
+URxvt.secondaryScreen:  1
+URxvt.secondaryScroll:  0
+URxvt.saveLines:        5000
+
+! URxvt visual style
+URxvt.letterSpace:      0
+URxvt.lineSpace:        1
+URxvt.depth:            32
+URxvt.background:       [70]#000000
+URxvt.scrollColor:      #a19b9b
+URxvt.fading:           15

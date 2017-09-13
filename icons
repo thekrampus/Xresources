@@ -1,0 +1,5 @@
+! -*- mode: conf-xdefaults; -*-
+! Xorg icon/cursor theme configuration (called from .Xresources)
+! depends: aur/capitaine-cursors
+
+Xcursor.theme: Capitaine

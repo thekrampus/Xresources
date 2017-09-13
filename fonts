@@ -1,0 +1,25 @@
+! -*- mode: conf-xdefaults; -*-
+! Font configuration (called from .Xresources)
+! depends: aur/bdf-tewi-git | extra/artwiz-fonts | community/profont | extra/ttf-sazanami | extra/bdf-unifont
+! If you dont have candy, Tewi is fine.
+
+! Terminal font definitions
+#define termfont        xft:shdw candy:charwidth=6:pixelsize=11:antialias=false:style=Regular
+#define boldfont        xft:Tewi:pixelsize=11:antialias=false:style=Bold
+#define italFont        xft:artwiz anorexia.se:antialias=false:style=Regular
+#define fallbackfont    xft:profont:size=10,xft:Sazanami Gothic:style=Gothic-Regular,Regular,xft:Unifont:pixelsize=11:antialias=false
+
+! fix XFT fonts
+Xft.antialias: true
+Xft.dpi:       96
+Xft.hinting:   true
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+Xft.rgba:      rgb
+
+! Set URxvt fonts
+URxvt.font:             termfont,fallbackfont
+URxvt.boldFont:         boldfont,fallbackfont
+URxvt.italicFont:       italFont,fallbackfont
+URxvt.boldItalicFont:   boldfont,fallbackfont
+

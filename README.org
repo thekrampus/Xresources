@@ -1,0 +1,36 @@
+* Xresources -- my personal configuration
+  
+** what
+   
+   This is just the graphical configuration I've settled on for most of the stuff I like to use.
+   The standard way of doing Xresources is just to have one big ol' .Xresources file, but I've
+   organized mine into separate files based on, like, the way it is.
+   
+*** [[file:colors][colors]]
+
+    16-color palette. It's pretty. A screenshot would be nice here, wouldn't it?
+
+*** [[file:fonts][fonts]]
+
+    Font definitions. I'm not defining fonts for everything, just for URxvt.
+    The primary font is *candy* which is a fork of *Tewi*. Unfortunately *candy* is no longer maintained
+    afaik. If you know where to find it please hit me up, I've just been copying it around because
+    /it's like real good, dude./
+    Also uses *Tewi* for bold, *anorexia.se* for italic, and *profont*, *Sazanami Gothic*, and *Unifont* for
+    fallback rendering.
+    
+*** [[file:icons][icons]]
+    
+    Only defines Xcursors. Uses *Capitaine*
+    
+*** [[file:URxvt][URxvt]]
+    
+    Configures *URxvt* /real good, dude./
+
+** but how
+   
+   To use:
+   - ~git clone~ to somewhere like ~$HOME/.Xresources.d~
+   - load with ~xrdb -I"$HOME/.Xresources.d" Xresources~ from your xinit or wherever your desktop
+     environment does it
+   

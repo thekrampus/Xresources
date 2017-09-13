@@ -1,0 +1,48 @@
+! -*- mode: conf-xdefaults; -*-
+! Color palette configuration (called from .Xresources)
+! This defines the colors used in the starman theme.
+
+! dark gunmetal
+*.background: rgb:2a/25/29
+! steel teal
+*.foreground: rgb:60/7c/88
+
+! jet
+*.color0:  rgb:39/33/33
+! outer space
+*.color8:  rgb:3f/4e/53
+
+! sweet brown
+*.color1:  rgb:a5/37/2e
+! terra cotta
+*.color9:  rgb:e0/6c/5c
+
+! gray-asparagus
+*.color2:  rgb:4a/66/3c
+! camouflage green
+*.color10: rgb:7b/99/6c
+
+! grizzly
+*.color3:  rgb:7c/56/18
+! deer
+*.color11: rgb:b3/88/49
+
+! japanese indigo
+*.color4:  rgb:27/40/60
+! b-dazzled blue
+*.color12: rgb:33/5c/81
+
+! wenge
+*.color5:  rgb:68/4a/52
+! brown sugar
+*.color13: rgb:b0/71/56
+
+! metallic seaweed
+*.color6:  rgb:0f/82/9d
+! verdigris
+*.color14: rgb:3a/98/ae
+
+! spanish gray
+*.color7:  rgb:a1/9b/9b
+! silver
+*.color15: rgb:c4/c0/c0
