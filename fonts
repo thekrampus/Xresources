@@ -6,8 +6,12 @@
 ! Terminal font definitions
 #define termfont        xft:shdw candy:charwidth=6:pixelsize=11:antialias=false:style=Regular
 #define boldfont        xft:Tewi:pixelsize=11:antialias=false:style=Bold
-#define italFont        xft:artwiz anorexia.se:antialias=false:style=Regular
-#define fallbackfont    xft:profont:size=10,xft:Sazanami Gothic:style=Gothic-Regular,Regular,xft:Unifont:pixelsize=11:antialias=false
+#define italfont        xft:artwiz anorexia.se:antialias=false:style=Regular
+#define fallback        xft:profont:size=10,xft:Sazanami Gothic:style=Gothic-Regular,Regular,xft:Unifont:pixelsize=11:antialias=false
+
+#define bigtermfont     xft:ProFont:charwidth=12:pixelsize=22:antialias=false:style=Regular
+#define bigboldfont     xft:ProFont:charwidth=12:pixelsize=22:antialias=false:style=Bold
+#define bigfallback     xft:ProFont:charwidth=12:pixelsize=22:antialias=false,xft:Sazanami Gothic:style=Gothic-Regular,Regular,xft:Unifont:pixelsize=22:antialias=false
 
 ! fix XFT fonts
 Xft.antialias: true
@@ -18,8 +22,11 @@ Xft.lcdfilter: lcddefault
 Xft.rgba:      rgb
 
 ! Set URxvt fonts
-URxvt.font:             termfont,fallbackfont
-URxvt.boldFont:         boldfont,fallbackfont
-URxvt.italicFont:       italFont,fallbackfont
-URxvt.boldItalicFont:   boldfont,fallbackfont
+URxvt.font:             termfont,fallback
+URxvt.boldFont:         boldfont,fallback
+URxvt.italicFont:       italfont,fallback
+URxvt.boldItalicFont:   boldfont,fallback
 
+! Keybindings for font-switching
+URxvt.keysym.Control-Shift-Down: command:\033]710;termfont,fallback\007\033]711;boldfont,fallback\007\033]712;italfont,fallback\007\033]713;boldfont,fallback\007
+URxvt.keysym.Control-Shift-Up:   command:\033]710;bigtermfont,bigfallback\007\033]711;bigboldfont,bigfallback\007\033]712;bigboldfont,bigfallback\007\033]713;bigboldfont,bigfallback\007

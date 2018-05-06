@@ -3,12 +3,7 @@
 ! Either set your xinit to load this file or symlink this to ~/.Xresources
 ! Be sure to add this repo to your xrdb include path (see `man xrdb`)
 
-! #include ".Xresources.d/colors"
-! #include ".Xresources.d/fonts"
-! #include ".Xresources.d/URxvt"
-! #include ".Xresources.d/icons"
-
-#include "colors"
-#include "fonts"
-#include "URxvt"
-#include "icons"
+#include ".Xresources.d/colors"
+#include ".Xresources.d/fonts"
+#include ".Xresources.d/URxvt"
+#include ".Xresources.d/icons"

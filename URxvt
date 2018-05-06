@@ -1,6 +1,6 @@
 ! -*- mode: conf-xdefaults; -*-
 ! URxvt configuration (called from .Xresources)
-! depends: aur/rxvt-unicode-patched | aur/urxvt-vtwheel | community/compton (for compositing) | 
+! depends: aur/rxvt-unicode-patched | aur/urxvt-vtwheel | community/compton (for compositing) |
 
 ! URxvt extensions
 URxvt.perl-ext-common:  default,matcher,vtwheel
