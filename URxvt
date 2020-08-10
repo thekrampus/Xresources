@@ -12,8 +12,8 @@ URxvt.iso14755_52:      false
 ! set urgent on terminal bell
 URxvt.urgentOnBell:     true
 
-! clickable urls should open automatically in chromium
-URxvt.url-launcher:     /usr/bin/chromium
+! clickable urls should open automatically in firefox
+URxvt.url-launcher:     /usr/sbin/firefox
 URxvt.matcher.button:   1
 URxvt.colorUL:          #a19b9b
 
